@@ -7,13 +7,13 @@ export default function Home() {
     <div>
       <section className="min-h-[calc(100vh-65px)] flex items-center relative overflow-hidden w-full">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col text-white text-left">
-              <p className="text-6xl">
+              <p className="text-4xl md:text-6xl">
                 Discover Your Next Favorite Indie Game & Follow Its Creation.
               </p>
 
-              <p className="text-2xl mt-4 text-gray-300">
+              <p className="text-md lg:text-2xl mt-4 text-gray-300">
                 IndieFable is an indie game showcase where players can discover unique games and follow their entire development journey.
               </p>
 

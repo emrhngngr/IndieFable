@@ -131,7 +131,7 @@ const EngineHive = () => {
   }, [setupGlowInterval]);
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center py-8">
+    <div className="w-full md:min-h-screen flex items-center justify-center py-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"
