@@ -7,6 +7,11 @@
 
 IndieFable is a platform where players can discover unique indie games and follow their entire development journey from concept to launch.
 
+<p align="center">
+    <img src="./public/wishlist.jpg" alt="Wishlist preview" width="1000" />
+</p>
+<p align="center"><strong>Wishlist Page</strong></p>
+<p align="center"><a href="https://indie-fable.vercel.app">Live Preview</a></p>
 ---
 
 ## 💡 The Problem
