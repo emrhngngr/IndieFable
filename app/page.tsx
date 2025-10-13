@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import EngineHive from "./components/EngineHive";
 import { FaGem } from "react-icons/fa";
+import EngineHive from "./components/EngineHive";
 
 export default function Home() {
   return (
