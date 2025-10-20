@@ -32,8 +32,9 @@ export default function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
                 variant={"default"}
                 size={"lg"}
                 className="ml-4 cursor-pointer"
+                onClick={() => window.open("https://github.com/emrhngngr/IndieFable", "_blank")}
               >
-                Learn More
+                Open Source
               </Button>
             </div>
           </div>

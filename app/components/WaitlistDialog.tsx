@@ -12,6 +12,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
 
 interface WaitlistDialogProps {
   open: boolean;
@@ -86,7 +88,7 @@ export default function WaitlistDialog({ open, onOpenChange }: WaitlistDialogPro
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[350px]">
         <DialogHeader>
           <DialogTitle>Join the Waitlist</DialogTitle>
           <DialogDescription>
@@ -113,14 +115,11 @@ export default function WaitlistDialog({ open, onOpenChange }: WaitlistDialogPro
             />
             
             <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="name" className="text-right">
-                Name
-              </Label>
               <Input
                 id="name"
                 value={name}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
-                className="col-span-3"
+                className="col-span-4"
                 placeholder="Your name"
                 required
                 disabled={isSubmitting}
@@ -128,16 +127,13 @@ export default function WaitlistDialog({ open, onOpenChange }: WaitlistDialogPro
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="email" className="text-right">
-                Email
-              </Label>
               <Input
                 id="email"
                 type="email"
                 value={email}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-                className="col-span-3"
-                placeholder="your@email.com"
+                className="col-span-4"
+                placeholder="Enter your email"
                 required
                 disabled={isSubmitting}
                 maxLength={255}
@@ -155,16 +151,40 @@ export default function WaitlistDialog({ open, onOpenChange }: WaitlistDialogPro
               </div>
             )}
           </div>
-          <DialogFooter>
             <Button 
-              className="cursor-pointer" 
+              className="cursor-pointer flex w-full justify-center" 
               type="submit" 
               disabled={isSubmitting || !name.trim() || !email.trim()}
             >
               {isSubmitting ? "Joining..." : "Join Waitlist"}
             </Button>
-          </DialogFooter>
         </form>
+        {/* <div className="flex items-center gap-4 mt-4 justify-center">
+          <span className="flex-grow border-t"></span>
+          <div className="text-xs text-center text-gray-500">
+            OR SIGN IN WITH
+          </div>
+          <span className="flex-grow border-t"></span>
+        </div>
+
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          <Button
+            variant="outline"
+            className="cursor-pointer"
+            size={'lg'}
+            onClick={() => window.open("/auth/google", "_self")}
+          >
+            <FcGoogle className="size-[24px] "/>
+          </Button>
+          <Button
+            variant="outline"
+            className="cursor-pointer"
+            size={'lg'}
+            onClick={() => window.open("/auth/github", "_self")}
+          >
+            <FaGithub className="size-[24px]" />
+          </Button>
+        </div> */}
       </DialogContent>
     </Dialog>
   );
