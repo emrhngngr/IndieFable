@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Lexend } from "next/font/google";
+import LayoutClient from "./components/LayoutClient";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -25,10 +26,9 @@ export default function RootLayout({
       <body
         className={`${lexend.variable} m-0 p-0 overflow-x-hidden flex flex-col min-h-screen`}
       >
-        <Navbar />
-        <main className="flex-grow">
+        <LayoutClient>
           {children}
-        </main>
+        </LayoutClient>
         <Footer />
         <Analytics />
       </body>

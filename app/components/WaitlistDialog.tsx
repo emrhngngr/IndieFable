@@ -159,6 +159,7 @@ export default function WaitlistDialog({ open, onOpenChange }: WaitlistDialogPro
               {isSubmitting ? "Joining..." : "Join Waitlist"}
             </Button>
         </form>
+        {/* SIGN IN WITH Google or Github section */}
         {/* <div className="flex items-center gap-4 mt-4 justify-center">
           <span className="flex-grow border-t"></span>
           <div className="text-xs text-center text-gray-500">
