@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import { Lexend } from "next/font/google";
 import LayoutClient from "./components/LayoutClient";
 
@@ -29,8 +28,8 @@ export default function RootLayout({
         <LayoutClient>
           {children}
         </LayoutClient>
-        <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

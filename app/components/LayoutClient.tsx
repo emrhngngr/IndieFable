@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import WaitlistDialog from "./WaitlistDialog";
 
 interface LayoutClientProps {
@@ -21,6 +22,7 @@ export default function LayoutClient({ children }: LayoutClientProps) {
       <main className="flex-grow">
         {children}
       </main>
+      <Footer />
       <WaitlistDialog 
         open={isWaitlistOpen} 
         onOpenChange={setIsWaitlistOpen} 
