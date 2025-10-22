@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "games": [
+    {
+      "_id": "65350c3a1d9a4b8e2f3a4b01",
+      "title": "Starlight Echoes",
+      "slug": "starlight-echoes",
+      "image": "https://picsum.photos/id/237/1920/1080",
+      "genre": "Metroidvania",
+      "curatorTagline": "A melancholic sci-fi love letter dedicated to pixel art.",
+      "platforms": ["windows", "mac", "linux"],
+      "isFree": false
+    },
+    {
+      "_id": "65350c3a1d9a4b8e2f3a4b02",
+      "title": "The Last Cartographer",
+      "slug": "the-last-cartographer",
+      "image": "https://picsum.photos/id/237/1920/1080",
+      "genre": "Puzzle",
+      "curatorTagline": "The most creative map-based puzzle mechanic I've seen in years.",
+      "platforms": ["windows", "mac"],
+      "isFree": true
+    },
+    {
+      "_id": "65350c3a1d9a4b8e2f3a4b03",
+      "title": "Grovekeeper",
+      "slug": "grovekeeper",
+      "image": "https://picsum.photos/id/237/1920/1080",
+      "genre": "Cozy Sim",
+      "curatorTagline": "A relaxing farming simulation focused on pure comfort that respects your time.",
+      "platforms": ["windows"],
+      "isFree": false
+    },
+    {
+      "_id": "65350c3a1d9a4b8e2f3a4b04",
+      "title": "Void Scrapper",
+      "slug": "void-scrapper",
+      "image": "https://picsum.photos/id/237/1920/1080",
+      "genre": "Roguelite",
+      "curatorTagline": "'Just one more run...' Addictive, fast, and perfect.",
+      "platforms": ["windows", "linux"],
+      "isFree": true
+    },
+    {
+      "_id": "65350c3a1d9a4b8e2f3a4b05",
+      "title": "Paper Trail",
+      "slug": "paper-trail",
+      "image": "https://picsum.photos/id/237/1920/1080",
+      "genre": "Adventure",
+      "curatorTagline": "A poignant story of abandonment set in a captivating world.",
+      "platforms": ["windows", "mac"],
+      "isFree": false
+    }
+  ]
+}

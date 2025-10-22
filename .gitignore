@@ -49,6 +49,3 @@ logs/*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Ignore the data folder
-data/
