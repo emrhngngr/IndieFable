@@ -21,6 +21,28 @@
   }
 }
 
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes gradient-y {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: top center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: bottom center;
+  }
+}
+
 .led-border::before {
   content: '';
   position: absolute;
@@ -118,6 +140,9 @@ body {
   .text-glow-hover:hover {
     text-shadow: 0 0 10px #ffffff, 0 0 20px #838383, 0 0 30px #ffffff, 0 0 40px #ffffff;
     transition: text-shadow 0.3s ease;
+  }
+  .animate-gradient-x {
+    animation: gradient-x 2s ease infinite;
   }
 }
 
